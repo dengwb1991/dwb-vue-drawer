@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, miximum=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta http-equiv="pragra" content="no-cache">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="flexible" content="initial-dpr=1, maximum-dpr=1" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="author" content="邓文斌,dengwb1991">
+    <title>Dwb Vue Drawer</title>
+    <style type="text/css">
+      input {
+        height: 38px;
+        line-height: 38px;
+        font-size: 22px;
+        width: 200px;
+        margin-bottom: 40px;
+      }
+      button {
+        height: 28px;
+        line-height: 28px;
+        margin-left: 20px;
+        width: 60px;
+        background: orange;
+        border: none;
+        border-radius: 4px;
+        font-family: PingFangSC-Medium;
+        font-size: 12px;
+        color: #FFFFFF;
+        user-select: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+    <div class="open" @click="show">BOTTOM</div>
+    <dwb-vue-drawer :visible.sync="visible"
+            :position="position"
+            :lock-scroll="lockScroll"
+            :mask-closable="maskClosable"
+            :z-index="zIndex"
+            :mask-style="maskStyle"
+            :container-style="containerStyle"
+            @open="open"
+            @close="close">
+      <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+        <li>555</li>
+        <li>666</li>
+      </ul>
+    </dwb-vue-drawer>
+    </div>
+  </body>
+</html>
