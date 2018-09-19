@@ -5,6 +5,7 @@
 [![](https://img.shields.io/npm/dt/dwb-vue-drawer.svg)](https://www.npmjs.com/package/dwb-vue-drawer)
 [![](https://img.shields.io/github/stars/dengwb1991/dwb-vue-drawer.svg?style=social&label=Stars)]()
 
+![conv_ops](http://vuetool.dengwb.com/static/ezgif-3-00986149a9.gif)
 
 ## Install
 
